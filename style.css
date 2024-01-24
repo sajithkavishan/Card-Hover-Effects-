@@ -6,7 +6,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh;
-    background: #444;
+    background: #353535;
     align-items: center;
     justify-content: center;
     font-family: Poppins, sans-serif;
@@ -32,9 +32,10 @@ body {
 
 .faceone {
     position: relative;
-    background-color: #333;
+    background-color: #2f2f2f;
     display: flex;
     justify-content: center;
+    border-radius: 10px 10px 10px 10px;
     align-items: center;
     align-content: center;
     z-index: 1;
@@ -43,14 +44,16 @@ body {
 
 .container .card:hover .face.faceone {
     transform: translateY(0);
-    box-shadow: inset 0 0 60px whitesmoke,
-                inset 20px 0 80px #f0f,
-                inset -20px 0 80px #0ff,
-                inset 20px 0 300px #f0f,
-                inset -20px 0 300px #0ff,
-                0 0 50px #fff,
-                -10px 0 80px #f0f,
-                10px 0 80px #0ff;
+    border-radius: 10px 10px 0px 0px;
+    box-shadow: inset 0 0 40px rgb(118, 118, 118);
+    /* box-shadow: inset 0 0 60px rgb(179, 8, 231),
+                inset 20px 0 80px rgb(187, 0, 255),
+                inset -20px 0 80px rgb(233, 20, 102),
+                inset 20px 0 300px rgb(187, 0, 255),
+                inset -20px 0 300px rgb(233, 20, 102),
+                0 0 50px #d30fb5,
+                -10px 0 80px rgb(187, 0, 255),
+                10px 0 80px rgb(233, 20, 102); */
 }
 
 .content {
@@ -65,13 +68,13 @@ body {
 
 i {
     font-size: 3em;
-    color: #fff;
+    color: #dadada;
     display: inline-block;
 }
 
 h3 {
     font-size: 1em;
-    color: #fff;
+    color: #dadada;
     text-align: center;
 }
 
@@ -81,10 +84,11 @@ a {
 
 .facetwo {
     position: relative;
-    background: whitesmoke;
+    background: rgb(128, 128, 128);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px 8px 8px 8px;
     padding: 20px;
     box-sizing: border-box;
     box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);    
@@ -93,28 +97,31 @@ a {
 
 .container .card:hover .face.facetwo {
     transform: translate(0);
+    border-radius: 0px 0px 10px 10px;
 }
 
 p, a {
     font-size: 10pt;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #dadada;
 }
 
 a {
     text-decoration: none;
-    color: #111;
+    color: #dadada;
     box-sizing: border-box;
-    outline: 1px solid #333;
+    border-radius: 3px;
+    outline: 1.5px solid #dadada;
     padding: 10px;
     font-weight: 500;
-    margin: 15px 0 0;
+    margin: 20px 0 0 0;
     display: inline-block;
 }
 
 a:hover {
     background-color: #333;
+    outline: 1.5px solid #333;
     color: white;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
